@@ -3,7 +3,7 @@ library(dplyr)
 student_name <- "SARAVANAN K"
 roll_no <- "23BAD106"
 subtitle_text <- paste("Name:", student_name, "| Roll No:", roll_no)
-student_data <- read.csv("C:/Users/selva/Downloads/1.student_performance.csv")
+student_data <- read.csv("C:/Users/saravanan/Downloads/1.student_performance.csv") # <<---------change the path here
 head(student_data)
 student_data$Avg_Internal <- rowMeans(
   student_data[, c("Internal_Test1", "Internal_Test2")]
